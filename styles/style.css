@@ -161,7 +161,7 @@ main{
 
     position: absolute;
     top: 135px;   /* 135px from the top of .container */
-    left: 1100px;
+    left: 900px;
     
 }
 .shape_text{
@@ -480,4 +480,21 @@ table {
     font-family: "Inter", sans-serif;
     font-size: 1.25rem;
     color: rgba(255,255,255,0.5)
+}
+
+@media screen and (max-width: 576px){
+
+    .head-tag-main{
+    grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .nav-links{
+        display: none;
+    }
+    .header-figure{
+        position: relative;
+        top:auto;   /* 135px from the top of .container */
+        left:auto;
+    }
 }
