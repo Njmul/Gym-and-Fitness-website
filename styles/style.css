@@ -92,6 +92,9 @@ main{
  
 
 }
+.menu_icon{
+    display: none;
+}
 
 .logo{
     font-weight: 800;
@@ -317,8 +320,8 @@ main{
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    max-width: 1060px;
-    max-height: 378px;
+    width: 1060px;
+    height: 378px;
     padding: 0px 30px; 
     background-color:#222222; 
     border-radius: 15px;
@@ -519,10 +522,23 @@ table {
 
 @media screen and (max-width: 576px){
 
-    .head-tag-main{
+    .header-first{
         display: grid;
-    grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        width: 430px;
 
+    }
+    .button{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .btn-secondary{
+        margin-top: 10px;
+    }
+    .navbar{
+        width: 430px;
+        margin: 0 auto;
     }
 
     .nav-links{
@@ -532,11 +548,41 @@ table {
         position: relative;
         top:auto;   /* 135px from the top of .container */
         left:auto;
+        margin-top: 40px;
+
+    }
+    .header-figure{
+        padding-left: 0px;
     }
     .mark1{
         position: relative;
         
     
     }
-
+    .menu_icon{
+        display: flex;
+        /* color: #FFFFFF; */
+    }
+    .habits{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .page3{
+        width: 430px;
+        height: 800px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
+    }
+    .run-image{
+        padding-left: 0px;
+    }
+    .row1{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .row2{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
